@@ -4,11 +4,14 @@ on:
   push:
     branches:
       - master
+      - main
   pull_request:
     branches:
       - master
+      - main
   schedule:
     - cron: '0 0 * * 0' # Run weekly on Sunday at midnight
+  workflow_dispatch:
 
 jobs:
   build:
